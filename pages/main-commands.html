@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Загальні команди Git.">
+        <title>Базове користування Git</title>
+        <link rel="stylesheet" href="../styles/main-styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Загальні команди</h1>
+            <nav class="navbar">
+                <a href="../index.html">Головна</a>
+                <a href="concepts.html">Основні поняття</a>
+                <a href="showcase.html">Наглядні приклади</a>
+            </nav>
+        </header>
+
+        <main>
+            <h3 class="h-center">Команди Git для взаємодії через термінал<br>(Потребує встановлення Git на ПК)</h2>
+            <table id="info-table">
+                <thead>
+                    <tr>
+                        <th>Команда &lt;Аргумент&gt; </th>
+                        <th>Опис</th>
+                        <th>Приклади</td>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr>
+                        <th>git init &lt;directory&gt; </th>
+                        <td>Створює та ініціалізує новий локальний репозиторій <br> (опціонально вказуємо директорію &mdash; себто теку)</td>
+                        <td>git init &mdash; створює новий репозиторій в поточній теці.</td>
+                    </tr>
+
+                    <tr>
+                        <td>git clone &lt;url&gt; &lt;directory&gt; </td>
+                        <td>Копіює віддалений репозиторій <br> (атрибути: посилання на репозиторій, директорія в яку копіюємо)</td>
+                        <td>
+                            git clone https://github.com/user/repo.git &mdash; клонування у поточну теку<br>
+                            git clone https://github.com/user/repo.git
+                            <b style="text-decoration: underline; text-decoration-skip-ink: none;">myrepository</b>
+                            &mdash; клонування в задану теку
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>git status</td>
+                        <td>Показує стан репозиторію</td>
+                        <td>Зміни у файлах, внесені зміни, що готове до коміту</td>
+                    </tr>
+
+                    <tr>
+                        <td>git add &lt;file&gt; | &lt;directory&gt; | .</td>
+                        <td>Додає зміни у staging area / index (зона підготовки перед комітом)</td>
+                        <td>
+                            git add index.html &mdash; додає один файл <br> git add src/ &mdash; додає зміни у цілій теці
+                            <br> git add . &mdash; додає зміни у поточній теці
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>git commit -m &lt;message&gt; </td>
+                        <td>Вносить зміни до репозиторію (зазвичай окремої гілки)</td>
+                        <td>git commit -m "Додано нову секцію на головній сторінці"</td>
+                    </tr>
+
+                    <tr>
+                        <td>git log [--graph] [--oneline] [--all] </td>
+                        <td>Показує історію комітів</td>
+                        <td>
+                            git log &mdash; детальна історія комітів <br> git log --oneline &mdash; коротка історія комітів<br>
+                            git log --graph --oneline --all &mdash; візуальна графічна історія всіх гілок
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>git branch &lt;branch-name&gt; </td>
+                        <td>Показує існуючі гілки або створює нову <br> (створює за допомогою атрибуту з назвою нової гілки)</td>
+                        <td>git branch &mdash; показує всі локальні гілки <br> git branch feature-login &mdash; створює нову гілку feature-login</td>
+                    </tr>
+
+                    <tr>
+                        <td>git checkout &lt;branch-name&gt; | &lt;commit-id&gt; </td>
+                        <td>Перемикається між гілками або комітами</td>
+                        <td>git checkout main &mdash; перемикається на гілку main <br> git checkout a1b2c3d &mdash; перемикається на конкретний коміт</td>
+                    </tr>
+
+                    <tr>
+                        <td>git merge &lt;branch-name&gt; </td>
+                        <td>Об'єднує гілки</td>
+                        <td>git checkout main, git merge feature-login &mdash; об’єднує зміни <br> з feature-login у main</td>
+                    </tr>
+
+                    <tr>
+                        <td>git push &lt;remote&gt; &lt;branch&gt; </td>
+                        <td>Відправляє зміни на віддалений репозиторій <br> (атрибути: посилання, гілка репозиторію)</td>
+                        <td>git push origin main &mdash; відправляє гілку main на віддалений репозиторій origin</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>

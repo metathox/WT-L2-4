@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Невеличкий веб-сайт про користування Git.">
+        <title>Базове користування Git</title>
+        <link rel="stylesheet" href="styles/main-styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Головна</h1>
+
+            <nav class="navbar">
+                <a href="pages/concepts.html">Основні поняття</a>
+                <a href="pages/main-commands.html">Загальні Команди</a>
+                <a href="pages/showcase.html">Наглядні приклади</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-text">
+                <h2>Що таке Git?</h2>
+                <p>
+                    Git — це система контролю версій (VCS — Version Control System), створена у 2005 році Лінусом Торвальдсом.
+                    Вона дозволяє відстежувати зміни в коді чи файлах проєкту, бачити історію та повертатися до попередніх версій,
+                    а також працювати над проєктом кільком розробникам одночасно.
+                    Git сам по собі не зберігає файли у хмарі — для цього використовують GitHub, GitLab або інші сервіси.
+                </p>
+            </section>
+
+            <section class="section-text">
+                <h2>Для чого потрібен Git?</h2>
+                <ul class="feature-list">
+                    <li><strong>Відстеження змін:</strong> кожна зміна файлу зберігається як commit, можна подивитися, що змінилося і коли.</li>
+                    <li><strong>Повернення до попередніх версій:</strong> якщо помилився або зламав щось, можна відкотитися назад.</li>
+                    <li><strong>Робота в команді:</strong> дозволяє декільком людям працювати над одним проєктом одночасно без конфліктів.</li>
+                    <li><strong>Експерименти без ризику:</strong> створюєш гілки (branches) для нових фіч, тестуєш їх, а потім об’єднуєш з основною версією.</li>
+                    <li><strong>Резервне копіювання:</strong> якщо проєкт зберігається на GitHub/GitLab, додані зміни не пропадуть.</li>
+                </ul>
+            </section>
+
+            <section class="section-text">
+                <div class="columns">
+                    <div class="column left">
+                        <h2>Посилання на встановлення Git:</h2>
+                        <ul style="list-style: none; list-style-position: inside; padding-left: 0;">
+                            <li>
+                                <a href="https://git-scm.com/downloads" target="_blank"
+                                    rel="noopener noreferrer" style="font-size: 2.5vh; margin-left: 2em;">https://git-scm.com/downloads
+                                </a>
+                            </li>
+
+                            <li>
+                                <h2>Github:</h2>
+                                <li>
+                                    <a href="https://github.com/" target="_blank"
+                                        rel="noopener noreferrer" style="font-size: 2.5vh; margin-left: 2em;">https://github.com/
+                                    </a>
+                                </li>
+                            </li>
+
+                            <li>
+                                <h2>Web-development repository:</h2>
+                                <li>
+                                    <a href="https://github.com/iamismile/web-dev-resources" target="_blank"
+                                        rel="noopener noreferrer" style="font-size: 2.5vh; margin-left: 2em;">
+                                        https://github.com/iamismile/web-dev-resources
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column right">
+                        <h2>Встановлення за допомогою терміналу:</h2>
+                        <ol class="feature-list">
+                            <li>Windows:
+                                <ul>
+                                    <li>sudo winget install --id Git.Git -e --source winget</li>
+                                </ul>
+                            </li>
+
+                            <li>Linux (Ubuntu/Debian):
+                                <ul>
+                                    <li>sudo apt update</li>
+                                    <li>sudo apt install git</li>
+                                </ul>
+                            </li>
+
+                            <li>Mac OS:
+                                <ul>
+                                    <li>
+                                        sudo brew install git
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
