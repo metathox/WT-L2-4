@@ -13,7 +13,6 @@
             <nav class="navbar">
                 <a href="../index.html">Головна</a>
                 <a href="concepts.html">Основні поняття</a>
-                <a href="showcase.html">Наглядні приклади</a>
             </nav>
         </header>
 
@@ -31,19 +30,19 @@
 
                 <tbody>
                     <tr>
-                        <th>git init &lt;directory&gt; </th>
-                        <td>Створює та ініціалізує новий локальний репозиторій <br> (опціонально вказуємо директорію &mdash; себто теку)</td>
+                        <td>git init &lt;directory&gt; </td>
+                        <td>Створює та ініціалізує новий локальний репозиторій</td>
                         <td>git init &mdash; створює новий репозиторій в поточній теці.</td>
                     </tr>
 
                     <tr>
                         <td>git clone &lt;url&gt; &lt;directory&gt; </td>
-                        <td>Копіює віддалений репозиторій <br> (атрибути: посилання на репозиторій, директорія в яку копіюємо)</td>
+                        <td>Копіює віддалений репозиторій</td>
                         <td>
                             git clone https://github.com/user/repo.git &mdash; клонування у поточну теку<br>
                             git clone https://github.com/user/repo.git
                             <b style="text-decoration: underline; text-decoration-skip-ink: none;">myrepository</b>
-                            &mdash; клонування в задану теку
+                            &mdash; <br> клонування в задану теку
                         </td>
                     </tr>
 
@@ -55,16 +54,16 @@
 
                     <tr>
                         <td>git add &lt;file&gt; | &lt;directory&gt; | .</td>
-                        <td>Додає зміни у staging area / index (зона підготовки перед комітом)</td>
+                        <td>Додає зміни у staging area / index <br> (зона підготовки перед комітом)</td>
                         <td>
                             git add index.html &mdash; додає один файл <br> git add src/ &mdash; додає зміни у цілій теці
-                            <br> git add . &mdash; додає зміни у поточній теці
+                            <br> git add . &mdash; додає всі файли в теці та підтеках
                         </td>
                     </tr>
 
                     <tr>
                         <td>git commit -m &lt;message&gt; </td>
-                        <td>Вносить зміни до репозиторію (зазвичай окремої гілки)</td>
+                        <td>Вносить зміни до локального репозиторію</td>
                         <td>git commit -m "Додано нову секцію на головній сторінці"</td>
                     </tr>
 
@@ -72,19 +71,18 @@
                         <td>git log [--graph] [--oneline] [--all] </td>
                         <td>Показує історію комітів</td>
                         <td>
-                            git log &mdash; детальна історія комітів <br> git log --oneline &mdash; коротка історія комітів<br>
-                            git log --graph --oneline --all &mdash; візуальна графічна історія всіх гілок
+                            git log &mdash; детальна історія комітів <br> git log --oneline &mdash; коротка історія комітів
                         </td>
                     </tr>
 
                     <tr>
                         <td>git branch &lt;branch-name&gt; </td>
-                        <td>Показує існуючі гілки або створює нову <br> (створює за допомогою атрибуту з назвою нової гілки)</td>
+                        <td>Показує існуючі гілки або створює нову</td>
                         <td>git branch &mdash; показує всі локальні гілки <br> git branch feature-login &mdash; створює нову гілку feature-login</td>
                     </tr>
 
                     <tr>
-                        <td>git checkout &lt;branch-name&gt; | &lt;commit-id&gt; </td>
+                        <td>git checkout &lt;branch-name&gt; | <br> &lt;commit-id&gt; </td>
                         <td>Перемикається між гілками або комітами</td>
                         <td>git checkout main &mdash; перемикається на гілку main <br> git checkout a1b2c3d &mdash; перемикається на конкретний коміт</td>
                     </tr>
@@ -97,8 +95,14 @@
 
                     <tr>
                         <td>git push &lt;remote&gt; &lt;branch&gt; </td>
-                        <td>Відправляє зміни на віддалений репозиторій <br> (атрибути: посилання, гілка репозиторію)</td>
-                        <td>git push origin main &mdash; відправляє гілку main на віддалений репозиторій origin</td>
+                        <td>Відправляє зміни на віддалений репозиторій</td>
+                        <td>git push origin main &mdash; відправляє origin на гілку main</td>
+                    </tr>
+
+                    <tr>
+                        <td>git remote add origin &lt;url&gt; </td>
+                        <td>Під'єднує локальний репозиторій до віддаленого</td>
+                        <td>git remote add origin https://github.com/user-name/repo</td>
                     </tr>
                 </tbody>
             </table>

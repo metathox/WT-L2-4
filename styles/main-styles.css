@@ -11,7 +11,9 @@ body
 
 h1
 {
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
     letter-spacing: 0.125em;
     margin-bottom: 0.125em;
     color: var(--pale-yellow);
@@ -97,6 +99,7 @@ th, td
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 4em;
 }
 
@@ -115,4 +118,11 @@ th, td
 {
     float: right;
     width: 40%;
+}
+
+#showcase-page
+{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--pale-yellow);
 }
